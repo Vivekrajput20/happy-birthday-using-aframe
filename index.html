@@ -10,25 +10,37 @@
   <body>
     <a-scene birthday-party>
       <a-assets>
-        <a-asset-item id="cake-obj" src="/asset/cake/cake.obj"></a-asset-item>
-        <a-asset-item id="cake-mtl" src="/asset/cake/cake.mtl"></a-asset-item>
-        <a-asset-item id="one-obj" src="/asset/one/one.obj"></a-asset-item>
-        <a-asset-item id="one-mtl" src="/asset/one/one.mtl"></a-asset-item>
-        <a-asset-item id="nine-obj" src="/asset/nine/nine.obj"></a-asset-item>
-        <a-asset-item id="nine-mtl" src="/asset/nine/nine.mtl"></a-asset-item>
-        <a-asset-item id="tv-obj" src="/asset/tv/TV.obj"></a-asset-item>
-        <a-asset-item id="tv-mtl" src="/asset/tv/TV.mtl"></a-asset-item>
-        <a-asset-item id="gift2-obj" src="/asset/gift/gift2.obj"></a-asset-item>
-        <a-asset-item id="gift2-mtl" src="/asset/gift/gift2.mtl"></a-asset-item>
-        <a-asset-item id="gift1-obj" src="/asset/gift/gift1.obj"></a-asset-item>
-        <a-asset-item id="gift1-mtl" src="/asset/gift/gift1.mtl"></a-asset-item>
+        <a-asset-item id="cake-obj" src="./asset/cake/cake.obj"></a-asset-item>
+        <a-asset-item id="cake-mtl" src="./asset/cake/cake.mtl"></a-asset-item>
+        <a-asset-item id="one-obj" src="./asset/one/one.obj"></a-asset-item>
+        <a-asset-item id="one-mtl" src="./asset/one/one.mtl"></a-asset-item>
+        <a-asset-item id="nine-obj" src="./asset/nine/nine.obj"></a-asset-item>
+        <a-asset-item id="nine-mtl" src="./asset/nine/nine.mtl"></a-asset-item>
+        <a-asset-item id="tv-obj" src="./asset/tv/TV.obj"></a-asset-item>
+        <a-asset-item id="tv-mtl" src="./asset/tv/TV.mtl"></a-asset-item>
+        <a-asset-item
+          id="gift2-obj"
+          src="./asset/gift/gift2.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="gift2-mtl"
+          src="./asset/gift/gift2.mtl"
+        ></a-asset-item>
+        <a-asset-item
+          id="gift1-obj"
+          src="./asset/gift/gift1.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="gift1-mtl"
+          src="./asset/gift/gift1.mtl"
+        ></a-asset-item>
         <a-asset-item
           id="plant1-obj"
-          src="/asset/plants/plant1.obj"
+          src="./asset/plants/plant1.obj"
         ></a-asset-item>
         <a-asset-item
           id="plant1-mtl"
-          src="/asset/plants/plant1.mtl"
+          src="./asset/plants/plant1.mtl"
         ></a-asset-item>
         <img id="groundTexture" src="./asset/marble.jpg" />
         <img id="wallTexture" src="./asset/butterflies_wallpaper.jpg" />
@@ -39,11 +51,11 @@
         />
         <a-asset-item
           id="table-obj"
-          src="/asset/table/table_wood_and_iron.obj"
+          src="./asset/table/table_wood_and_iron.obj"
         ></a-asset-item>
         <a-asset-item
           id="table-mtl"
-          src="/asset/table/table_wood_and_iron.mtl"
+          src="./asset/table/table_wood_and_iron.mtl"
         ></a-asset-item>
         <video class="myvideos" id="video1" src="./vid/vid1.mp4"></video>
         <video class="myvideos" id="video2" src="./vid/vid2.mp4"></video>
@@ -66,7 +78,7 @@
         ></a-entity>
         <a-entity
           position="-0.109 1.3175 -3.71304"
-          obj-model="mtl: /asset/one/one.mtl; obj: /asset/one/one.obj"
+          obj-model="mtl: ./asset/one/one.mtl; obj: ./asset/one/one.obj"
           scale="0.025 0.025 0.025"
           material=""
           id="one-et"
@@ -74,7 +86,7 @@
         ></a-entity>
         <a-entity
           position="0.20344 1.3175 -3.71036"
-          obj-model="mtl: /asset/nine/nine.mtl; obj: /asset/nine/nine.obj"
+          obj-model="mtl: ./asset/nine/nine.mtl; obj: ./asset/nine/nine.obj"
           scale="0.025 0.025 0.025"
           material=""
           id="nine-et"
@@ -84,7 +96,7 @@
       </a-entity>
       <a-entity
         position="0 0 -4"
-        obj-model="mtl: /asset/table/table_wood_and_iron.mtl; obj: /asset/table/table_wood_and_iron.obj"
+        obj-model="mtl: ./asset/table/table_wood_and_iron.mtl; obj: ./asset/table/table_wood_and_iron.obj"
         scale="3.71 2 2.85"
         material=""
       ></a-entity>
@@ -92,7 +104,7 @@
         position="0 2.25 -3.98153"
         particle-system="color: #EF0000, #44CC00; maxParticleCount: 2000"
       ></a-entity>
-      <a-sky src="/asset/sky/3.jpg"></a-sky>
+      <a-sky src="./asset/sky/3.jpg"></a-sky>
       <a-plane
         ground
         src="#groundTexture"
@@ -143,63 +155,63 @@
       <a-entity id="tv-parent" position="0 0 0"> </a-entity>
       <a-entity
         position="-1.31203 0.98043 -4.23718"
-        obj-model="mtl: /asset/gift/gift2.mtl; obj: /asset/gift/gift2.obj"
+        obj-model="mtl: ./asset/gift/gift2.mtl; obj: ./asset/gift/gift2.obj"
         scale="0.04 0.04 0.04"
         material=""
         rotation="-90 0 0"
       ></a-entity>
       <a-entity
         position="1.55774 0.98043 -4.23718"
-        obj-model="mtl: /asset/gift/gift2.mtl; obj: /asset/gift/gift2.obj"
+        obj-model="mtl: ./asset/gift/gift2.mtl; obj: ./asset/gift/gift2.obj"
         scale="0.04 0.04 0.04"
         material=""
         rotation="-90 0 0"
       ></a-entity>
       <a-entity
         position="-2.90187 0.03865 -4.23718"
-        obj-model="mtl: /asset/gift/gift1.mtl; obj: /asset/gift/gift1.obj"
+        obj-model="mtl: ./asset/gift/gift1.mtl; obj: ./asset/gift/gift1.obj"
         scale="0.08 0.05 0.05"
         material=""
         rotation="-90 0 60"
       ></a-entity>
       <a-entity
         position="-8.45352 0.00723 3.80459"
-        obj-model="mtl: /asset/plants/plant1.mtl; obj: /asset/plants/plant1.obj"
+        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="-8.95311 0.00723 -4.429"
-        obj-model="mtl: /asset/plants/plant1.mtl; obj: /asset/plants/plant1.obj"
+        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="-8.95311 0.00723 11.83414"
-        obj-model="mtl: /asset/plants/plant1.mtl; obj: /asset/plants/plant1.obj"
+        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="8.84227 0.00723 3.80459"
-        obj-model="mtl: /asset/plants/plant1.mtl; obj: /asset/plants/plant1.obj"
+        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="8.84227  0.00723 11.83414"
-        obj-model="mtl: /asset/plants/plant1.mtl; obj: /asset/plants/plant1.obj"
+        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="8.84227 0.00723 -4.429"
-        obj-model="mtl: /asset/plants/plant1.mtl; obj: /asset/plants/plant1.obj"
+        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
         scale="3 3 3"
         material=""
         rotation=""
