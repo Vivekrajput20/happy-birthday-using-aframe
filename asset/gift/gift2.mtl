@@ -1,0 +1,32 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 14.11.2011 14:29:29
+
+newmtl _11563_gift_box_V311563_gift_box_Blue
+	Ns 25.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0706 0.2000 0.2902
+	Kd 0.0706 0.2000 0.2902
+	Ks 0.3600 0.3600 0.3600
+	Ke 0.0000 0.0000 0.0000
+	map_Ka 11563_gift_box_diffuse.jpg
+	map_Kd 11563_gift_box_diffuse.jpg
+
+newmtl _11563_gift_box_V311563_gift_box_White
+	Ns 15.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.9333 0.9333 0.9333
+	Kd 0.9333 0.9333 0.9333
+	Ks 0.5400 0.5400 0.5400
+	Ke 0.0000 0.0000 0.0000
+	map_Ka 11563_gift_box_bow_diffuse.jpg
+	map_Kd 11563_gift_box_bow_diffuse.jpg
+	map_bump Map__1_Normal Bump.jpg
+	bump Map__1_Normal Bump.jpg
