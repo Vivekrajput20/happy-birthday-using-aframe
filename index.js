@@ -113,12 +113,14 @@ AFRAME.registerComponent('birthday-party', {
       vd.setAttribute('src', video.src);
       vd.setAttribute('geometry', { width: '5.8', height: '3.4' });
       vd.setAttribute('position', '-0.004 2.19069 -0.285');
-      vd.addEventListener('click', () => {
+      vd.addEventListener('click', (self) => {
         const vids = document.querySelectorAll('.myvideos');
         for (let i = 0; i < vids.length; i += 1) {
           vids[i].pause();
         }
-        const videoInstance = document.querySelector(this.getAttribute('src'));
+        const videoInstance = document.querySelector(
+          self.srcElement.getAttribute('src'),
+        );
         if (videoInstance.paused) videoInstance.play();
         else videoInstance.pause();
       });
@@ -139,12 +141,14 @@ AFRAME.registerComponent('birthday-party', {
       vd.setAttribute('src', video.src);
       vd.setAttribute('geometry', { width: '5.8', height: '3.4' });
       vd.setAttribute('position', '-0.004 2.19069 -0.285');
-      vd.addEventListener('click', () => {
+      vd.addEventListener('click', (self) => {
         const vids = document.querySelectorAll('.myvideos');
         for (let i = 0; i < vids.length; i += 1) {
           vids[i].pause();
         }
-        const videoInstance = document.querySelector(this.getAttribute('src'));
+        const videoInstance = document.querySelector(
+          self.srcElement.getAttribute('src'),
+        );
         if (videoInstance.paused) videoInstance.play();
         else videoInstance.pause();
       });
