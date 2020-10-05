@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server"
+    "start": "live-server",
+    "lint": "eslint -- . "
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,10 @@
   "homepage": "https://github.com/Vivekrajput20/Happy-birthday-yavu#readme",
   "dependencies": {
     "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
   }
 }
