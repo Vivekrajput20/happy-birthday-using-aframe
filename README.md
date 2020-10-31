@@ -23,3 +23,6 @@ npm start
 ```
 
 Your A-Frame app will launch at `http://localhost:8080` automatically.
+
+## How to Contribute
+Some editors to use : VS Code, Sublime  
