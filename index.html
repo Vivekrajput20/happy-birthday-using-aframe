@@ -10,59 +10,121 @@
   <body>
     <a-scene birthday-party>
       <a-assets>
-        <a-asset-item id="cake-obj" src="./asset/cake/cake.obj"></a-asset-item>
-        <a-asset-item id="cake-mtl" src="./asset/cake/cake.mtl"></a-asset-item>
-        <a-asset-item id="one-obj" src="./asset/one/one.obj"></a-asset-item>
-        <a-asset-item id="one-mtl" src="./asset/one/one.mtl"></a-asset-item>
-        <a-asset-item id="nine-obj" src="./asset/nine/nine.obj"></a-asset-item>
-        <a-asset-item id="nine-mtl" src="./asset/nine/nine.mtl"></a-asset-item>
-        <a-asset-item id="tv-obj" src="./asset/tv/TV.obj"></a-asset-item>
-        <a-asset-item id="tv-mtl" src="./asset/tv/TV.mtl"></a-asset-item>
+        <!-- cake model -->
+        <a-asset-item
+          id="cake-obj"
+          src="./src/assets/models/cake/cake.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="cake-mtl"
+          src="./src/assets/models/cake/cake.mtl"
+        ></a-asset-item>
+        <!-- gift models -->
         <a-asset-item
           id="gift2-obj"
-          src="./asset/gift/gift2.obj"
+          src="./src/assets/models/gift/gift2.obj"
         ></a-asset-item>
         <a-asset-item
           id="gift2-mtl"
-          src="./asset/gift/gift2.mtl"
-        ></a-asset-item>
+          src="./src/assets/models/gift/gift2.mtl"
+        ></a-asset-itwem>
         <a-asset-item
           id="gift1-obj"
-          src="./asset/gift/gift1.obj"
+          src="./src/assets/models/gift/gift1.obj"
         ></a-asset-item>
         <a-asset-item
           id="gift1-mtl"
-          src="./asset/gift/gift1.mtl"
+          src="./src/assets/models/gift/gift1.mtl"
+        ></a-asset-item>
+        <!-- candle models -->
+        <a-asset-item
+          id="one-obj"
+          src="./src/assets/models/one/one.obj"
         ></a-asset-item>
         <a-asset-item
+          id="one-mtl"
+          src="./src/assets/models/one/one.mtl"
+        ></a-asset-item>
+        <a-asset-item
+          id="nine-obj"
+          src="./src/assets/models/nine/nine.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="nine-mtl"
+          src="./src/assets/models/nine/nine.mtl"
+        ></a-asset-item>
+        <!-- flame model -->
+        <a-asset-item
+          id="flame-obj"
+          src="./src/assets/models/cake/flame.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="flame-mtl"
+          src="./src/assets/models/cake/flame.mtl"
+        ></a-asset-item>
+        <!-- happy birthday audio -->
+        <audio id="hbd-audio" src='./src/assets/hbd.mp3'></audio>
+        <!-- television model -->
+        <a-asset-item id="tv-obj" src="./src/assets/models/tv/TV.obj"></a-asset-item>
+        <a-asset-item id="tv-mtl" src="./src/assets/models/tv/TV.mtl"></a-asset-item>
+        <!-- plant model -->
+        <a-asset-item
           id="plant1-obj"
-          src="./asset/plants/plant1.obj"
+          src="./src/assets/models/plants/plant1.obj"
         ></a-asset-item>
         <a-asset-item
           id="plant1-mtl"
-          src="./asset/plants/plant1.mtl"
+          src="./src/assets/models/plants/plant1.mtl"
         ></a-asset-item>
-        <img id="groundTexture" src="./asset/marble.jpg" />
-        <img id="wallTexture" src="./asset/butterflies_wallpaper.jpg" />
-        <img id="backwall" src="./asset/hbd.jpg" />
+        <!-- textures -->
+        <img id="groundTexture" src="./src/assets/images/marble-texture.jpg" />
+        <img id="wallTexture" src="./src/assets/images/blue-bg.jpg" />
+        <img id="backwall" src="./src/assets/images/happy-birthday-bg.jpg" />
+        <img id="sky" src="./src/assets/images/sky.jpg" />
+        <!-- red carpet -->
         <img
           id="redCarpet"
-          src="./asset/elegance-red-color-carpet-texture-background_49683-2232.jpg"
+          src="./src/assets/images/red-carpet.jpg"
         />
+        <!-- table model -->
         <a-asset-item
           id="table-obj"
-          src="./asset/table/table_wood_and_iron.obj"
+          src="./src/assets/models/table/table_wood_and_iron.obj"
         ></a-asset-item>
         <a-asset-item
           id="table-mtl"
-          src="./asset/table/table_wood_and_iron.mtl"
+          src="./src/assets/models/table/table_wood_and_iron.mtl"
         ></a-asset-item>
-        <video class="myvideos" id="video1" src="./vid/vid1.mp4"></video>
-        <video class="myvideos" id="video2" src="./vid/vid2.mp4"></video>
-        <video class="myvideos" id="video3" src="./vid/vid3.mp4"></video>
-        <video class="myvideos" id="video4" src="./vid/vid4.mp4"></video>
-        <video class="myvideos" id="video5" src="./vid/vid5.mp4"></video>
-        <video class="myvideos" id="video6" src="./vid/vid6.mp4"></video>
+        <video
+          class="myvideos"
+          id="video1"
+          src="./src/assets/videos/vid1.mp4"
+        ></video>
+        <video
+          class="myvideos"
+          id="video2"
+          src="./src/assets/videos/vid2.mp4"
+        ></video>
+        <video
+          class="myvideos"
+          id="video3"
+          src="./src/assets/videos/vid3.mp4"
+        ></video>
+        <video
+          class="myvideos"
+          id="video4"
+          src="./src/assets/videos/vid4.mp4"
+        ></video>
+        <video
+          class="myvideos"
+          id="video5"
+          src="./src/assets/videos/vid5.mp4"
+        ></video>
+        <video
+          class="myvideos"
+          id="video6"
+          src="./src/assets/videos/vid6.mp4"
+        ></video>
       </a-assets>
       <a-entity position="0 1.65 20">
         <a-camera>
@@ -78,7 +140,7 @@
         ></a-entity>
         <a-entity
           position="-0.109 1.3175 -3.71304"
-          obj-model="mtl: ./asset/one/one.mtl; obj: ./asset/one/one.obj"
+          obj-model="mtl: #one-mtl; obj: #one-obj"
           scale="0.025 0.025 0.025"
           material=""
           id="one-et"
@@ -86,17 +148,16 @@
         ></a-entity>
         <a-entity
           position="0.20344 1.3175 -3.71036"
-          obj-model="mtl: ./asset/nine/nine.mtl; obj: ./asset/nine/nine.obj"
+          obj-model="mtl: #nine-mtl; obj: #nine-obj"
           scale="0.025 0.025 0.025"
           material=""
           id="nine-et"
           rotation="-90 0 0"
-          src="./asset/cake/velas.png"
         ></a-entity>
       </a-entity>
       <a-entity
         position="0 0 -4"
-        obj-model="mtl: ./asset/table/table_wood_and_iron.mtl; obj: ./asset/table/table_wood_and_iron.obj"
+        obj-model="mtl: #table-mtl; obj: #table-obj"
         scale="3.71 2 2.85"
         material=""
       ></a-entity>
@@ -104,7 +165,7 @@
         position="0 2.25 -3.98153"
         particle-system="color: #EF0000, #44CC00; maxParticleCount: 2000"
       ></a-entity>
-      <a-sky src="./asset/sky/3.jpg"></a-sky>
+      <a-sky src="#sky"></a-sky>
       <a-plane
         ground
         src="#groundTexture"
@@ -155,74 +216,73 @@
       <a-entity id="tv-parent" position="0 0 0"> </a-entity>
       <a-entity
         position="-1.31203 0.98043 -4.23718"
-        obj-model="mtl: ./asset/gift/gift2.mtl; obj: ./asset/gift/gift2.obj"
+        obj-model="mtl: #gift2-mtl; obj: #gift2-obj"
         scale="0.04 0.04 0.04"
         material=""
         rotation="-90 0 0"
       ></a-entity>
       <a-entity
         position="1.55774 0.98043 -4.23718"
-        obj-model="mtl: ./asset/gift/gift2.mtl; obj: ./asset/gift/gift2.obj"
+        obj-model="mtl: #gift1-mtl; obj: #gift1-obj"
         scale="0.04 0.04 0.04"
         material=""
         rotation="-90 0 0"
       ></a-entity>
       <a-entity
         position="-2.90187 0.03865 -4.23718"
-        obj-model="mtl: ./asset/gift/gift1.mtl; obj: ./asset/gift/gift1.obj"
+        obj-model="mtl: #gift1-mtl; obj: #gift1-obj"
         scale="0.08 0.05 0.05"
         material=""
         rotation="-90 0 60"
       ></a-entity>
       <a-entity
         position="-8.45352 0.00723 3.80459"
-        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
+        obj-model="mtl: #plant1-mtl; obj: #plant1-obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="-8.95311 0.00723 -4.429"
-        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
+        obj-model="mtl: #plant1-mtl; obj:#plant1-obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="-8.95311 0.00723 11.83414"
-        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
+        obj-model="mtl: #plant1-mtl; obj:#plant1-obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="8.84227 0.00723 3.80459"
-        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
+        obj-model="mtl: #plant1-mtl; obj:#plant1-obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="8.84227  0.00723 11.83414"
-        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
+        obj-model="mtl: #plant1-mtl; obj:#plant1-obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-entity
         position="8.84227 0.00723 -4.429"
-        obj-model="mtl: ./asset/plants/plant1.mtl; obj: ./asset/plants/plant1.obj"
+        obj-model="mtl: #plant1-mtl; obj:#plant1-obj"
         scale="3 3 3"
         material=""
         rotation=""
       ></a-entity>
       <a-sound
-        src="src: url(./asset/hbd.mp3)"
+        src="#hbd-audio"
         autoplay="true"
         position="0 2 -5.77156"
-        sound="loop: true; volume: 1.5"
+        sound="loop: true; volume: 1.5w"
       ></a-sound>
     </a-scene>
-    <script src="./index.js"></script>
   </body>
 </html>

@@ -2,15 +2,17 @@
   "name": "happy-birthday-using-aframe",
   "version": "1.0.0",
   "description": "Birthday scene created using Aframe ",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server",
-    "lint": "eslint -- . "
+    "start": "webpack serve --open --mode development --hot --inline",
+    "lint": "eslint -- . ",
+    "build": "webpack",
+    "prettify": "prettier -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vivekrajput20/Happy-birthday-yavu.git"
+    "url": "git+https://github.com/Vivekrajput20/happy-birthday-using-aframe.git"
   },
   "keywords": [
     "aframe",
@@ -20,15 +22,25 @@
   "author": "vivek chand",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Vivekrajput20/Happy-birthday-yavu/issues"
+    "url": "https://github.com/Vivekrajput20/happy-birthday-using-aframe/issues"
   },
-  "homepage": "https://github.com/Vivekrajput20/Happy-birthday-yavu#readme",
-  "dependencies": {
-    "live-server": "^1.2.1"
-  },
+  "homepage": "https://github.com/Vivekrajput20/happy-birthday-using-aframe#readme",
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^7.10.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.1"
+    "css-loader": "^5.2.4",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.36.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "2.2.1",
+    "copy-webpack-plugin": "^8.1.1",
+    "terser-webpack-plugin": "^5.1.1"
   }
 }

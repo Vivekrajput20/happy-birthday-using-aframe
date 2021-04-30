@@ -1,3 +1,5 @@
+import './index.css';
+
 const flames = [
   {
     position: '-0.32627 1.70087 -4.01265',
@@ -82,8 +84,8 @@ AFRAME.registerComponent('birthday-party', {
     flames.map((flame) => {
       const fl = document.createElement('a-entity');
       fl.setAttribute('obj-model', {
-        mtl: './asset/cake/flame.mtl',
-        obj: './asset/cake/flame.obj',
+        mtl: '#flame-mtl',
+        obj: '#flame-obj',
       });
       fl.setAttribute('position', flame.position);
       fl.setAttribute('material', '');
@@ -118,9 +120,7 @@ AFRAME.registerComponent('birthday-party', {
         for (let i = 0; i < vids.length; i += 1) {
           vids[i].pause();
         }
-        const videoInstance = document.querySelector(
-          self.srcElement.getAttribute('src'),
-        );
+        const videoInstance = document.querySelector(self.srcElement.getAttribute('src'));
         if (videoInstance.paused) videoInstance.play();
         else videoInstance.pause();
       });
@@ -146,9 +146,7 @@ AFRAME.registerComponent('birthday-party', {
         for (let i = 0; i < vids.length; i += 1) {
           vids[i].pause();
         }
-        const videoInstance = document.querySelector(
-          self.srcElement.getAttribute('src'),
-        );
+        const videoInstance = document.querySelector(self.srcElement.getAttribute('src'));
         if (videoInstance.paused) videoInstance.play();
         else videoInstance.pause();
       });
