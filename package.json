@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open --mode development --hot --inline",
+    "start": "webpack serve --open --mode development",
     "lint": "eslint -- . ",
     "build": "webpack",
     "prettify": "prettier -w"

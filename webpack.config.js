@@ -1,3 +1,4 @@
+/* eslint-disable implicit-arrow-linebreak */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -24,7 +25,8 @@ module.exports = {
           loader: 'html-loader',
           options: {
             sources: true,
-            preprocessor: (content) => content.replace(/\/src\/assets\/models\//g, '/assets/models/'),
+            preprocessor: (content) =>
+              content.replace(/\/src\/assets\/models\//g, '/assets/models/'),
             minimize: true,
           },
         },
@@ -43,6 +45,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/assets/models'),
           to: path.resolve(__dirname, 'dist/assets/models'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/videos'),
+          to: path.resolve(__dirname, 'dist/assets/videos'),
         },
         {
           from: path.resolve(__dirname, 'favicon.ico'),
@@ -71,6 +77,7 @@ module.exports = {
       ignored: /node_modules/,
     },
     historyApiFallback: true,
+    hot: true,
   },
   optimization: {
     minimize: true,
