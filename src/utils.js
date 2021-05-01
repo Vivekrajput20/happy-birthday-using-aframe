@@ -46,3 +46,13 @@ export const getVideoEntity = (video, id) => {
   parentEl.appendChild(videoEl);
   return parentEl;
 };
+
+export const getTextEntity = (text) => {
+  const textEl = document.createElement('a-text');
+  textEl.setAttribute('value', text);
+  textEl.setAttribute('color', '#fff');
+  textEl.setAttribute('width', '20');
+  textEl.setAttribute('align', 'center');
+  textEl.setAttribute('position', '0 3.8 -10');
+  return textEl;
+};

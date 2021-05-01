@@ -2,7 +2,7 @@ import './index.css';
 
 import config from './config.json';
 import { flamesArray, videosObj } from './constants';
-import { getFlameEntity, getVideoEntity } from './utils';
+import { getFlameEntity, getTextEntity, getVideoEntity } from './utils';
 
 // eslint-disable-next-line no-undef
 AFRAME.registerComponent('birthday-party', {
@@ -25,5 +25,8 @@ AFRAME.registerComponent('birthday-party', {
       const videoEntity = getVideoEntity(videosObj[key], `video-${key}`);
       tvContainerEl.appendChild(videoEntity);
     });
+
+    const textEl = getTextEntity(config.name);
+    sceneEl.appendChild(textEl);
   },
 });
