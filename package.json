@@ -25,7 +25,10 @@
     "url": "https://github.com/Vivekrajput20/happy-birthday-using-aframe/issues"
   },
   "homepage": "https://github.com/Vivekrajput20/happy-birthday-using-aframe#readme",
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1"
+  },
   "devDependencies": {
     "css-loader": "^5.2.4",
     "eslint": "^7.25.0",

@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 
 import config from './config.json';
 import { flamesArray, videosObj } from './constants';
