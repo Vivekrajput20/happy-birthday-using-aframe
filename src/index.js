@@ -1,4 +1,5 @@
 import './index.scss';
+import './modal';
 
 import config from './config.json';
 import { flamesArray, videosObj } from './constants';

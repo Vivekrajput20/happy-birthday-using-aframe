@@ -101,13 +101,66 @@
           <a-sound src="#hbd-audio" autoplay="true" position="0 2 -5.77156" sound="loop: true; volume: 1.5w"></a-sound>
         </a-scene>
       </div>
+      <!-- create your own modal -->
+      <div class="custom-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="title">Create your own birthday scene</div><button type="button" class="close"
+              id="close-btn">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form class="user-info-form">
+              <label class="form-label form-label-100">
+                <div class="label-text">Name</div><input type="text" id='name' class="form-input"
+                  placeholder="Name of the person">
+              </label>
+              <label class="form-label form-label-100">
+                <div class="label-text">Age</div><input type="text" id='age' class="form-input"
+                  placeholder="Age of the person">
+              </label>
+              <label class="form-label form-label-100">
+                <div class="label-text">Sound</div><input type="text" id='background-sound' class="form-input"
+                  name='custom-sound' placeholder="optional | default sound | Gdrive link">
+              </label>
+              <label class="form-label form-label-50">
+                <div class="label-text"> Video 1</div><input type="text" id='video1' class="form-input"
+                  placeholder="optional | default: None | Gdrive link">
+              </label>
+              <label class="form-label form-label-50">
+                <div class="label-text"> Video 2</div><input type="text" id='video2' class="form-input"
+                  placeholder="optional | default: None | Gdrive link">
+              </label>
+              <label class="form-label form-label-50">
+                <div class="label-text"> Video 3</div><input type="text" id='video3' class="form-input"
+                  placeholder="optional | default: None | Gdrive link">
+              </label>
+              <label class="form-label form-label-50">
+                <div class="label-text"> Video 4</div><input type="text" id='video4' class="form-input"
+                  placeholder="optional | default: None | Gdrive link">
+              </label>
+              <label class="form-label form-label-50">
+                <div class="label-text"> Video 5</div><input type="text" id='video5' class="form-input"
+                  placeholder="optional | default: None | Gdrive link">
+              </label>
+              <label class="form-label form-label-50">
+                <div class="label-text"> Video 6</div><input type="text" id='video6' class="form-input"
+                  placeholder="optional | default: None | Gdrive link">
+              </label>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id='create-btn'>Create
+            </button>
+          </div>
+        </div>
+      </div>
       <!-- footer -->
       <div class="footer">
         <div class="footer-inner">
           <span>Made with ❤️ by <a class="creator-link" href="https://github.com/Vivekrajput20/"
               target="_blank">Vivek</a></span>
           <span class="separation-dot">&bull;</span>
-          <span>Create your own</span>
+          <button class="create-trigger" id="create-trigger">Create your own</button class="create-btn">
         </div>
       </div>
     </div>
