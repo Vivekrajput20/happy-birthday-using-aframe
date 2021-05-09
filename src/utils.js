@@ -56,3 +56,29 @@ export const getTextEntity = (text) => {
   textEl.setAttribute('position', '0 3.8 -10');
   return textEl;
 };
+
+export const getAgeEntity = (age) => {
+  const ageEl = document.createElement('a-entity');
+  ageEl.setAttribute('scale', '.5 .5 .5');
+  const ageDigits = age.split('');
+  ageDigits.forEach((digit, i) => {
+    if (Number.isNaN(parseInt(digit, 10)) === false) {
+      const digitParentEl = document.createElement('a-entity');
+      const digitEl = document.createElement('a-entity');
+      digitEl.setAttribute('gltf-model', `url(./assets/models/digits/${digit}.glb)`);
+      digitParentEl.setAttribute('position', `${i * 0.41} 0 0`);
+      const flameObj = {
+        position: '0 .3 0',
+        from: '-20 0 0',
+        to: '20 0 0',
+      };
+      const flameEl = getFlameEntity(flameObj);
+      flameEl.setAttribute('scale', '2 2 2');
+      digitParentEl.appendChild(flameEl);
+      digitParentEl.appendChild(digitEl);
+      ageEl.appendChild(digitParentEl);
+    }
+  });
+  ageEl.setAttribute('position', `-${(ageEl.children.length - 1) * 0.05} 1.55 -3.69`);
+  return ageEl;
+};

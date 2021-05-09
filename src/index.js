@@ -3,7 +3,8 @@ import './modal';
 
 import config from './config.json';
 import { flamesArray, videosObj } from './constants';
-import { getFlameEntity, getTextEntity, getVideoEntity } from './utils';
+// eslint-disable-next-line object-curly-newline
+import { getAgeEntity, getFlameEntity, getTextEntity, getVideoEntity } from './utils';
 
 // eslint-disable-next-line no-undef
 AFRAME.registerComponent('birthday-party', {
@@ -29,5 +30,7 @@ AFRAME.registerComponent('birthday-party', {
 
     const textEl = getTextEntity(config.name);
     sceneEl.appendChild(textEl);
+    const ageEl = getAgeEntity(config.age);
+    sceneEl.appendChild(ageEl);
   },
 });
